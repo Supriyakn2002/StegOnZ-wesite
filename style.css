@@ -1,0 +1,192 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    color: #111111;
+    line-height: 1.6;
+    padding: 0 20px;
+  }
+  
+  /* Reusable CTA button */
+  .cta {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta:hover {
+    background-color: #333333;
+  }
+  
+  /* Hero Section */
+  header.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  header.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Services Section */
+  .services {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .service {
+    margin-bottom: 30px;
+  }
+  
+  .service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* About Section */
+  .about {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Portfolio */
+  .portfolio {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Contact */
+  .contact {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact input,
+  .contact textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact button {
+    padding: 12px 24px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact button:hover {
+    background-color: #333333;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #555555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    header.hero h1 {
+      font-size: 2rem;
+    }
+  
+    .cta {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .contact input,
+    .contact textarea {
+      width: 95%;
+    }
+  }
+  /* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animate on hover (CTA) */
+  .cta {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta:hover {
+    background-color: #333;
+    transform: scale(1.05);
+  }
+  
+  
