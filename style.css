@@ -1,192 +1,93 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: #ffffff;
-    color: #111111;
-    line-height: 1.6;
-    padding: 0 20px;
-  }
-  
-  /* Reusable CTA button */
-  .cta {
-    display: inline-block;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta:hover {
-    background-color: #333333;
-  }
-  
-  /* Hero Section */
-  header.hero {
-    text-align: center;
-    padding: 80px 20px;
-    background-color: #f4f4f4;
-  }
-  
-  header.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  header.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Services Section */
-  .services {
-    text-align: center;
-    padding: 60px 20px;
-  }
-  
-  .services h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
-  
-  .service {
-    margin-bottom: 30px;
-  }
-  
-  .service h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .service p {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  /* About Section */
-  .about {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .about h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .about p {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  /* Portfolio */
-  .portfolio {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .portfolio h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Contact */
-  .contact {
-    background-color: #f4f4f4;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .contact h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .contact input,
-  .contact textarea {
-    width: 80%;
-    max-width: 400px;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .contact button {
-    padding: 12px 24px;
-    background-color: #000000;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .contact button:hover {
-    background-color: #333333;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-    color: #555555;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
-    header.hero h1 {
-      font-size: 2rem;
-    }
-  
-    .cta {
-      width: 100%;
-      text-align: center;
-    }
-  
-    .contact input,
-    .contact textarea {
-      width: 95%;
-    }
-  }
-  /* Fade-in Animation */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s forwards;
-    animation-delay: 0.2s;
-  }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Animate on hover (CTA) */
-  .cta {
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .cta:hover {
-    background-color: #333;
-    transform: scale(1.05);
-  }
-  
-  
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #4b0082;
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  overflow: hidden;
+  position: relative;
+  background-color: #f0f0f0;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.services {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #eaf4ff;
+  border-radius: 10px;
+}
+
+.services h2 {
+  text-align: center;
+  color: #4b0082;
+  margin-bottom: 2rem;
+}
+
+.service {
+  background: #fff;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-left: 5px solid #4b0082;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.service h3 {
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.cta {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #dff0e7;
+}
+
+.cta h2 {
+  color: #2e8b57;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background 0.3s;
+  font-size: 16px;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5d;
+}
+
+footer {
+  background-color: #4b0082;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
